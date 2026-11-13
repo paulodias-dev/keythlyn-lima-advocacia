@@ -1,0 +1,10 @@
+{
+  "$schema": "https://schema.org/docs/jsonldcontext.jsonld",
+  "name": "Keythlyn Lima Advocacia",
+  "url": "https://landing-key.fluxosistemas.dev.br/",
+  "description": "Advocacia especializada em Direito de Família, com atendimento em Goiânia e online.",
+  "language": "pt-BR",
+  "entityType": "LegalService",
+  "services": ["Direito de Família", "Divórcio e dissolução de união estável", "Pensão alimentícia", "Guarda dos filhos", "Regulamentação de convivência", "Investigação e reconhecimento de paternidade", "Partilha de bens"],
+  "professional": {"name": "Keythlyn Evelyn Teixeira de Lima", "role": "Advogada", "registration": "OAB/GO 67.481"}
+}

@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --color-alabaster: #faf9f6;
+  --color-stone-surface: #f4f1ec;
+  --color-hairline: #e4dfd5;
+  --color-ink: #181715;
+  --color-ink-muted: #524e48;
+  --color-gold-accent: #8f6520;
+  --color-gold-light: #c59b4e;
+  --color-whatsapp-deep: #135d36;
+  --color-whatsapp-hover: #0e4729;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-alabaster);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-alabaster);
+    color: var(--color-ink);
+    font-feature-settings: "kern" 1, "liga" 1;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  /* High-contrast accessible focus ring for keyboard navigation */
+  :focus-visible {
+    outline: 2px solid var(--color-gold-accent);
+    outline-offset: 3px;
+  }
+
+  /* Respect user motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://landing-key.fluxosistemas.dev.br/sitemap.xml
